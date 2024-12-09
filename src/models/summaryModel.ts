@@ -1,5 +1,6 @@
 export interface summaryModel {
-    bookName: String,
-    authorName: String,
-    description: String
+    _id: string;
+    bookName: String;
+    authorName: String;
+    description: String;
 }
