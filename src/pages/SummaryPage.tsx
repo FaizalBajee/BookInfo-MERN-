@@ -23,7 +23,9 @@ export const SummaryPage: React.FC = () => {
                 if (!res.data.success) {
                     return alert(res.data.message);
                 }
-                alert(res.data.message)
+                let updatedArray = books.filter((books) => books._id !== id)
+                setBooks(updatedArray);
+                alert(res.data.message);
             })
             .catch((error) => console.log(`error handling : ${error}`))
     }
